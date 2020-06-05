@@ -15,8 +15,10 @@ const sun = document.getElementById("sun");
 
 const restart = document.getElementById("restart");
 document.getElementById("restart").addEventListener("click", reset);
+document.getElementById("restart").style.visibility = "hidden";
 
 function walkingPigeon(){
+    document.getElementById("restart").style.visibility = "hidden";
     if (Math.floor(Math.random() * 2) == 0){
         angle = Math.floor(Math.random() * 91);
     }
@@ -51,6 +53,8 @@ function flyingPigeon(){
         Pigeon.style.top = top2 + "vw";
         Pigeon.style.left = left2 + "vw";
         Pigeon.style.opacity = "0";
+        sun.disabled = "true";
+        document.getElementById("restart").style.visibility = "visible";
     }
     else{
         if (estimation.value > secretNumber){
@@ -77,6 +81,7 @@ function reset(){
     setInterval(walkingPigeon, 2500);
     estimation.style.visibility = "visible";
     document.getElementById("blackCloud").style.visibility = "visible";
+    sun.disabled = "false";
 
     secretNumber = Math.floor(Math.random() * 101);
     estimation.value = 0;
