@@ -9,7 +9,7 @@ html, body{
     height: 49vw;
     margin: 1vw;
     background-color: rgb(230, 230, 248);
-    background-image: url(/assets/img/nature1.png);
+    background-image: url(../img/nature1.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -25,7 +25,7 @@ html, body{
     margin-top: 0vw;
     border: none;
     background-color: transparent;
-    background-image: url(/assets/img/restart.png);
+    background-image: url(../img/restart.png);
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 50%;
@@ -39,7 +39,7 @@ html, body{
     height: 18vw;
     margin-left: 80vw;
     margin-top: 0;
-    background-image: url(/assets/img/sun.png);
+    background-image: url(../img/sun.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -64,7 +64,7 @@ html, body{
     margin-right: 15vw;
     height: 15vw;
     margin-top: -10vw;
-    background-image: url(/assets/img/cloud.png);
+    background-image: url(../img/cloud.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
