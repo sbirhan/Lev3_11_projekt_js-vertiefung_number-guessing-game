@@ -9,7 +9,7 @@ html, body{
     height: 49vw;
     margin: 1vw;
     background-color: rgb(230, 230, 248);
-    background-image: url(../img/nature1.png);
+    background-image: url(/assets/img/nature1.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
