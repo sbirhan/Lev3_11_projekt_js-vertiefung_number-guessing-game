@@ -1,0 +1,201 @@
+html, body{
+    margin: 0;
+}
+
+.outerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 98vw;
+    height: 49vw;
+    margin: 1vw;
+    background-color: rgb(230, 230, 248);
+    background-image: url(/assets/img/nature1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#restart{
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    top: 8vw;
+    border-radius: 50%;
+    margin-left: 45vw;
+    margin-right: 0vw;
+    margin-top: 0vw;
+    border: none;
+    background-color: transparent;
+    background-image: url(/assets/img/restart.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 50%;
+}
+
+.sun{
+    flex: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vw;
+    margin-left: 80vw;
+    margin-top: 0;
+    background-image: url(/assets/img/sun.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sun{
+    width: 7vw;
+    height: 7vw;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: rgb(255, 153, 0);
+    background-color: white;
+}
+
+#blackCloud{
+    flex: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 55vw;
+    margin-right: 15vw;
+    height: 15vw;
+    margin-top: -10vw;
+    background-image: url(/assets/img/cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cloud{
+    width: 4vw;
+    height: 4vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    border-radius: 50%;
+    border: none;
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    opacity: 30%;
+    background-color: rgb(230, 224, 224);
+}
+
+.house{
+    display: flex;
+    flex-wrap: wrap;
+    width: 39vw;
+    height: 36vw;
+    margin-top: -10vw;
+    margin-left: 10vw;
+}
+
+.roof{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 35vw;
+    height: 17vw;
+    border-top-left-radius: 18vw;
+    border-top-right-radius: 18vw;
+    border: 1vw solid rgb(0, 50, 0);
+    margin: 1vw;
+    margin-top: 2vw;
+    border-bottom: 0;
+    background:repeating-linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.5) 0.1vw,
+        rgba(209, 90, 10, 0.5) 1vw,
+        rgba(151, 73, 9, 0.5) 1vw
+      ),
+      repeating-linear-gradient(
+        to right, 
+        rgba(0, 0, 0, 0.5) 0.3vw,
+        rgba(209, 90, 10, 0.5) 1vw,
+        rgba(151, 73, 9, 0.5) 1vw,
+        rgba(0, 0, 0, 0.5) 0.3vw
+      );
+}
+
+.wall{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(243, 238, 167);
+    width: 35vw;
+    height: 15vw;
+    border: 1vw solid rgb(0, 50, 0);
+    margin: 1vw;
+    margin-top: -1vw;
+    border-top: 0;
+    
+}
+
+.window-left{
+    flex: 12%;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    margin-right: 0;
+    height: 10vw;
+    border: .2vw solid rgb(255, 230, 0);
+    border-right: none;
+    background:repeating-radial-gradient(
+        farthest-corner at 0% 0%,
+        rgba(255, 255, 255, 0.5) 0vw,
+        rgba(250, 250, 250, 0.9) 6vw,
+        rgba(255, 255, 255, 0.9) 6vw
+      )
+}
+
+.window-right{
+    flex: 12%;
+    margin-left: 0;
+    margin-top: 1vw;
+    margin-right: 1vw;
+    height: 10vw;
+    border: .2vw solid rgb(255, 230, 0);
+    border-left: none;
+    background-color: cornsilk;
+    background:repeating-radial-gradient(
+        farthest-corner at 100% 0%,
+        rgba(255, 255, 255, 0.5) 0vw,
+        rgba(250, 250, 250, 0.9) 6vw,
+        rgba(255, 255, 255, 0.9) 6vw
+      )
+}
+
+.door{
+    flex: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 4.8vw;
+    height: 10vw;
+    background-color: rgb(194, 194, 240);
+    border: .2vw solid rgb(160, 160, 224);
+    border-bottom: none;
+}
+
+.key{
+    width: 1vw;
+    height: .4vw;
+    margin-left: .4vw;
+    background-color: rgb(160, 160, 224);
+}
+
+#pigeonOnRoof{
+    position: absolute;
+    border-radius: 50%;
+    background-color: transparent;
+    top: 14vw;
+    left: 16vw;
+    width: 3vw;
+    height: 3vw;
+    z-index: 100;
+}
+
+#pigeonOnRoof>img{
+    width: 100%;
+}
