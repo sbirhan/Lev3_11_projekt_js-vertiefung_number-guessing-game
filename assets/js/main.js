@@ -20,6 +20,14 @@ restart.style.visibility = "hidden";
 const gameNumberLimit = document.getElementById("rangeSlider");
 var gameNumber = gameNumberLimit.value;
 
+document.getElementById("bodyID").addEventListener("load", window.alert(
+`Guess the right number to make the bird free. You can write
+the number that you guess the input box in the gray cloud. 
+If the number is bigger than secret number, the sun will be 
+orange, otherwise the sun will be white. You can adjust the 
+number of estimation from light pillar. If you want to play 
+again, click the button in the white cloud. The button will 
+be seen after game over.`));
 
 function walkingPigeon(){    
     document.getElementById("restart").style.visibility = "hidden";
